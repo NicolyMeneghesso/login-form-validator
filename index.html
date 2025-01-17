@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="./assets/stylesheets/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content-center align-items-center p-0">
+      <div class="card-main row gx-5">
+        <div class="col p-5">
+          <h3 class="title-card-main text-center mb-2">Have an account?</h3>
+          <p class="text-card-main">Log in to access your account, customize your experience, and explore the beauty of Japan with us.</p>
+          <button class="btn btn-main d-grid gap-2 col-6" onclick="moveSide('login')">LOG IN</button>
+        </div>
+        <div class="col p-5">
+          <h3 class="title-card-main text-center mb-2">Don't Have an account?</h3>
+          <p class="text-card-main">Create your account now and embark on a journey through Japanese culture, tailored just for you.</p>
+          <button class="btn btn-main d-grid gap-2 col-6" onclick="moveSide('singup')">SING UP</button>
+        </div>
+
+        <div class="card-login" id="card-login">
+          <!--CARD LOGIN-->
+          <div class="card-info-login" id="card-info-login">
+            <h1 class="title-info">Login</h1>
+            <form action="/" method="POST" class="form">
+              <div class="form-floating my-3">
+                <input type="email" class="form-control email validate" id="loginEmail" placeholder="name@example.com">
+                <label for="loginEmail">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control mb-1 password validate" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <a class="forgot-password" href="#">Forgot Password?</a>
+              </div>
+              <button class="btn btn-send d-block mx-auto" type="submit">Enviar</button>
+            </form>
+          </div>
+
+          <!--CARD CREAT ACCOUNT-->
+          <div class="card-info-singup form" id="card-info-singup" style="display: none;">
+            <h1 class="title-info">Create Account</h1>
+            <form action="/" method="POST" class="form">
+              <div class="form-floating my-3">
+                <input type="text" class="name validate form-control" placeholder="Leave a comment here" id="floatingTextarea"></input>
+                <label>Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control validate" id="signupEmail" placeholder="name@example.com">
+                <label for="signupEmail">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control password validate" id="floatingPassword password" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="btn btn-send d-block mx-auto" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/main.js"></script>
+  </body>
+</html>

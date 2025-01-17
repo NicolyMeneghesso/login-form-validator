@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container-fluid {
+  height: 100%;
+  background-image: url('../img/img-bottom.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-color: rgba(41, 41, 41, 0.60);
+  background-blend-mode: overlay;
+}
+
+.card-main {
+  width: 70%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.78);
+  position: relative;
+  padding: 20px;
+  font-family: "Nunito", serif;
+}
+
+.title-card-main {
+  color: white;
+  font-size: 34px;
+}
+
+.text-card-main {
+  color: white;
+  font-size: 16px;
+}
+
+.btn-main {
+  background-color: transparent !important;
+  border: 2px solid rgb(208, 168, 192) !important;
+  color: rgb(208, 168, 192) !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-main:hover {
+  background-color: rgb(208, 168, 192) !important;
+  color: rgb(128, 56, 80) !important;
+}
+
+.card-login {
+  width: 45% !important;
+  height: 125%;
+  background-color: rgb(235, 188, 212);
+  position: absolute;
+  padding: 25px;
+  top: -12%;
+  left: 50px;
+  z-index: 1;
+  transition: left 0.3s ease-in-out; 
+  font-family: "Nunito", serif;
+}
+
+.card-login::before, .card-login::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-image: url('../img/img-tree.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.card-login::before {
+  top: 0; 
+}
+
+.card-login::after {
+  bottom: 0; 
+  transform: rotate(180deg); 
+}
+
+.card-info-login, .card-info-singup {
+  padding: 0 20px;
+  margin-top: 25px;
+}
+
+.title-info {
+  text-align: center;
+}
+
+.btn-send {
+  width: 50%;
+  padding: 7px !important;
+  margin-top: 10px; 
+  border: none;
+  background-color: transparent !important; 
+  border: 2px solid rgb(175, 89, 157) !important;
+  cursor: pointer !important;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+.btn-send:hover {
+  background-color: rgb(175, 89, 157) !important;
+}
+
+.forgot-password {
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.forgot-password:hover {
+  color: rgb(168, 18, 136);
+}
+
+.error-text {
+  font-size: 15px;
+  color: rgb(2, 2, 2);
+  font-family: "Afacad Flux", serif;
+  margin-bottom: 0;
+}
